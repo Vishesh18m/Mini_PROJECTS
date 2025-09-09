@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(146, 146, 146), black);
+    height: 100vh;
+}
+
+h1{
+    margin-top: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+h3{
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    height: 10rem;
+    width: 10rem;
+    border: 0.6rem solid black;
+    border-radius: 2rem;
+    margin: 1.1rem;
+}
+
+.button_container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.red{
+    background-color: rgb(153, 7, 7);
+
+}
+
+.yellow{
+    background-color: rgb(146, 146, 16);
+}
+
+.blue{
+    background-color: rgb(10, 141, 141);
+}
+
+.green{
+    background-color: rgb(4, 85, 4);
+}
+
+.flash{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128) ;
+
+}
+.userflash{
+    background-color: rgb(75, 255, 75);
+    box-shadow: 5px 5px 5px rgb(173, 173, 173) ;
+
+}
+
+.rightbtn{
+    border: 0.5rem solid lightgreen;
+}

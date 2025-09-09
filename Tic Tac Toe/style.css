@@ -1,0 +1,338 @@
+body{
+    height: 100svh;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(87, 87, 87), black);
+    transition: 3s;
+}
+
+.matchDrawBody{
+    background: linear-gradient(to bottom, rgb(229, 255, 84), black);
+}
+
+.userWinBody{
+    background: linear-gradient(to bottom, rgb(123, 235, 255), black);
+}
+
+.computerWinBody{
+    background: linear-gradient(to bottom, rgb(134, 0, 0), black);   
+}
+
+h1{
+    position: relative;
+    top: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+.user{
+    color: rgb(13, 255, 174);
+}
+.computer{
+    color: rgba(196, 17, 76, 0.911);
+}
+
+.grid{
+    margin-top: 13rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    pointer-events: none;
+}
+
+.winline{
+    height: 17rem;
+    width: 17rem;
+    position: absolute; 
+    z-index: 2;
+    pointer-events: none;
+}
+
+.winrow{
+    position: absolute; 
+    z-index: 2;
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
+}
+
+
+.playbox{
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.rowline{
+    width: 15rem;
+    height: 0px;
+    border: 0.3rem dashed rgb(221, 208, 87);
+    pointer-events: none;
+}
+
+.wincol{
+    position: absolute; 
+    z-index: 2;
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
+}
+
+.colline{
+    height: 15rem;
+    border: 0.3rem dashed  rgb(221, 208, 87);
+    pointer-events: none;
+}
+
+.windiagonal{
+    position: absolute; 
+    z-index: 2;
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.diagonal{
+    height: 19rem;
+    border: 0.3rem dashed rgb(221, 208, 87);
+    pointer-events: none;
+}
+
+#VII{
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+#VIII{
+    transform: rotate(-45deg);
+    pointer-events: none;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#a{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0.5rem 0.5rem 0;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#b{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#c{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#d{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#e{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#f{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+#g{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0.5rem 0 0;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+
+#h{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+
+#i{
+    height: 5rem;
+    width: 5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+.btn:hover{
+    background-color: red;
+}
+
+.computerWin{
+    background: linear-gradient(to bottom, rgb(255, 37, 37), black);
+}
+
+.userWin{
+    background: linear-gradient(to bottom, rgb(237, 255, 78), black);
+}
+
+.restartComputer{
+    height: 3rem;
+    width: 7rem;
+    margin: auto;
+    margin-top: 4rem;
+    border: 0.2rem solid rgb(121, 0, 0);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    background-color: rgb(39, 0, 8);
+    color: rgba(255, 86, 108, 0.315);
+    box-shadow: 0rem 0rem 0.5rem black;
+}
+
+.restartUser{
+    height: 3rem;
+    width: 7rem;
+    margin: auto;
+    margin-top: 4rem;
+    border: 0.2rem solid rgb(0, 107, 121);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    background-color: rgb(0, 28, 39);
+    color: rgba(86, 216, 255, 0.315);
+    box-shadow: 0rem 0rem 0.5rem black;
+}
+
+.restartComputer:hover{
+    background-color: rgb(155, 0, 31);
+    color: rgb(255, 148, 162);
+    box-shadow: 0rem 0rem 1rem black;
+}
+
+.restartUser:hover{
+    background-color: rgb(0, 132, 155);
+    color: rgba(148, 239, 255, 0.897);
+    box-shadow: 0rem 0rem 1rem black;
+}
+
+.restartDraw{
+    height: 3rem;
+    width: 7rem;
+    margin: auto;
+    margin-top: 4rem;
+    border: 0.2rem solid rgb(113, 121, 0);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    background-color: rgb(35, 39, 0);
+    color: rgba(244, 255, 86, 0.315);
+    box-shadow: 0rem 0rem 0.5rem black;
+}
+
+.restartDraw:hover{
+    background-color: rgb(164, 182, 0);
+    color: rgba(239, 255, 148, 0.897);
+    box-shadow: 0rem 0rem 1rem black;
+}
+
+#winloss{
+    font-size: larger;
+
+}

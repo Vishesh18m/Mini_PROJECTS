@@ -1,0 +1,405 @@
+body{
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden; /* it will hide the content and scrollbar*/
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.main_content{
+    background-color: #121212;
+    flex: 1; /* give all the remaining space in main to maincontent */
+    border-radius: 1rem; /* = 16px */
+    overflow: auto; /* if scrollbar needed it will automatically apear */
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem; /* = 16px */
+    margin-right: 0.5rem;
+}
+
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+.nev{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    height: 100px;
+}
+
+.nev_option a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.nev_option i{
+    font-size: 1.25rem;
+}
+
+.nev_option{
+    padding: 0.5rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+
+.nev_option:hover{
+    opacity: 1;
+}
+
+.options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.options a{
+    text-decoration: none;
+    color: white;
+}
+
+.library{
+    border-radius: 1rem;
+    background-color: #121212;
+    margin-top: 0.5rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    font-size: 1rem;
+    display: flex;
+}
+
+.icon i{
+    opacity: 0.7;
+    margin: 0.5rem;
+}
+
+.icon i:hover{
+    opacity: 1;
+}
+
+.box1{
+    border-radius: 1rem;
+    background-color: #232323;
+    height: 8rem;
+    padding-top: 1rem ;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 0.75rem 0rem 1rem 0rem;
+}
+
+.box_line1{
+    font-weight: 500;
+    margin-top: 0.7rem;
+    font-size: 1rem;
+}
+
+.box_line2{
+    opacity: 0.75;
+    font-size: 0.85rem;
+}
+
+.badge{
+    height: 2rem;
+    background-color: white;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.stickyNav{
+    position: sticky;
+    top:0px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.6rem 0 0.6rem 0;
+    z-index: 5;
+}
+
+.sticky_nav_left{
+    margin-left: 0.75rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky_nav_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stickyright{
+    margin: 0.5rem;
+}
+
+.install{
+    background-color: black;
+    color: white;
+}
+
+.install_icon{
+    margin-right: 0.4rem;
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.8rem;
+}
+
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardimg{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card_title{
+    font-weight: 600;
+}
+
+.card_info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.music_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.music_image img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+}
+
+.mname{
+    margin: 0 0 0 0;
+    font-weight: 600;
+    font-size: 0.90rem;
+
+}
+
+.creator{
+    margin: 0 0 0 0;
+}
+
+.music_name{
+    margin-left: 0.9rem;
+}
+
+.creator{
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.plus .circle i{
+    font-size: 0.55rem;
+    opacity: 0.6;
+}
+
+.player{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause_play img{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.pause_play{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.paused{
+    opacity: 0.9;
+}
+
+.pause_play img:hover{
+    opacity: 1;
+}
+
+.pause_play .paused{
+    height: 2rem;
+    width: 2rem;
+}
+
+.pause_options{
+    opacity: 0.6;
+}
+
+.pause_options2{
+    opacity: 0.8;
+}
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline img{
+    width: 50px;
+    height: 10px;
+}
+
+.rangebar{
+    appearance: none;
+    width: 25rem;
+    cursor: pointer;
+}
+
+.rangebar::-webkit-slider-runnable-track{
+    height: 0.15rem;
+    width: 100px;
+}
+
+.time{
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.rangebar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(33, 163, 33);
+    height: 1rem;
+    width: 1rem;
+    margin-top: -6px;
+    border-radius: 50%;
+}
+
+.music_controls{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.music_controls div {
+    margin-right: 0.5rem;
+    margin-left: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_controls div i{
+    opacity: 0.6;
+}
+
+.music_controls div i:hover{
+    opacity: 1;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.card{
+    transition: 0.6s;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 0 2px rgb(71, 71, 71);
+    .playnow{
+        opacity: 1;
+        bottom: 7.5rem;
+    }
+}
+
+.image-icon-card{
+    display: block;
+}
+
+.playnow{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(18, 168, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    bottom: 6.5rem;
+    left: 7.5rem;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+    .player{
+        width: 70%;
+    }
+    .music_info{
+        width: 30%;
+    }
+}

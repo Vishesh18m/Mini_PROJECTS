@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+
+    <div class="grid"> 
+        
+        <div class="winline">
+            <div class="winrow">
+                <div class="win rowline hide" id="I"></div>
+                <div class="win rowline hide" id="II"></div>
+                <div class="win rowline hide" id="III"></div>
+            </div>
+        
+            <div class="wincol">
+                <div class="win colline hide" id="IV"></div>
+                <div class="win colline hide" id="V"></div>
+                <div class="win colline hide" id="VI"></div>
+            </div>
+            
+            <div class="windiagonal">
+                <div class="win hide diagonal" id="VII"></div>
+                <div class="win hide diagonal" id="VIII"></div>
+            </div>
+            
+        </div>
+
+        <div class="playbox">
+            <div class="one row">
+                <div class="btn box" id="a" type="button"><h2></h2></div>
+                <div class="btn box" id="b" type="button"><h2></h2></div>
+                <div class="btn box" id="c" type="button"><h2></h2></div>
+            </div>
+            <div class="two row">
+                <div class="btn box" id="d" type="button"><h2></h2></div>
+                <div class="btn box" id="e" type="button"><h2></h2></div>
+                <div class="btn box" id="f" type="button"><h2></h2></div>
+            </div>
+            <div class="three row">
+                <div class="btn box" id="g" type="button"><h2></h2></div>
+                <div class="btn box" id="h" type="button"><h2></h2></div>
+                <div class="btn box" id="i" type="button"><h2></h2></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="restart hide" type="button">RESTART</div>
+
+    <script src="game.js"></script>
+</body>
+</html>
