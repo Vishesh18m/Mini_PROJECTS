@@ -112,4 +112,4 @@ let allbtn = document.querySelectorAll(".btn");
 for(btn of allbtn){
     btn.addEventListener("click",btnpress);
 }
-document.addEventListener("keypress", starter);
+document.addEventListener("click", starter);
