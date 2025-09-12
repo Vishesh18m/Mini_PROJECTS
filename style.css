@@ -1,0 +1,89 @@
+body {
+    height: 100svh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 57, 57), rgb(211, 184, 34));
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: #f7fff4;
+}
+
+p {
+    font-size: medium;
+    font-weight: 700;
+    color: #f7fff4;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#Simon_Game{
+    height: 3rem;
+    width: 8rem;
+    border: 0.4rem solid rgb(5, 182, 79);
+    border-radius: 3rem;
+    align-content: center;
+    background-color: rgba(3, 136, 85, 0.658);
+    margin: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 1rem ;
+}
+
+#Tic_Tac_Toe{
+    height: 3rem;
+    width: 8rem;
+    border: 0.4rem solid rgb(255, 54, 88);
+    border-radius: 3rem;
+    align-content: center;
+    background-color: rgba(148, 1, 38, 0.815);
+    margin: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 1rem ;
+}
+
+#Spotify_Clone{
+    height: 3rem;
+    width: 8rem;
+    border: 0.4rem solid rgb(198, 113, 255);
+    border-radius: 3rem;
+    align-content: center;
+    background-color: rgba(132, 2, 150, 0.808);
+    margin: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 1rem ;
+}
+
+.btn{
+    text-decoration: none;
+    font-style: none;
+    font-weight: 700;
+}
+
+.Spotify_Clone{
+    color: rgb(212, 167, 255);
+}
+
+.Tic_Tac_Toe{
+    color: rgba(255, 190, 190, 0.822);
+}
+
+.Simon_Game{
+    color: rgb(135, 255, 209);
+}
+
+#Simon_Game:hover{
+    box-shadow: 0.3rem 0.3rem 0.6rem !important;
+    transform: scale(0.99);
+}
+
+#Spotify_Clone:hover{
+    box-shadow: 0.3rem 0.3rem 0.6rem !important;
+    transform: scale(0.99);
+}
+
+#Tic_Tac_Toe:hover{
+    box-shadow: 0.3rem 0.3rem 0.6rem !important;
+    transform: scale(0.99);
+}
